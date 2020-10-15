@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d{
+            border: 20px solid;
+            padding: 20px;
+            margin: 30px;
+        }
+    </style>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div id="d">
+        <h1>dsvbssgvsedv</h1>
+        <p>dsvmndsm, ms vmas</p>
+    </div>
+    <button id="btnw">widths</button>
+    <button id="btniw">innerwidths</button>
+
+    <button id="btnow">outerwidths</button>
+
+    <button id="btnowt">outerwidthst</button>
+<br><br>
+    <button id="btnh">heig</button>
+    <button id="btnih">innerhegi</button>
+
+    <button id="btnoh">outerhegi</button>
+
+    <button id="btnoht">outerheigt</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#btnw").click(function(){
+               var a= $("#d").width();
+                console.log(a);
+            });
+            $("#btniw").click(function(){
+               var a= $("#d").innerWidth();
+                console.log(a);
+            });
+            $("#btnow").click(function(){
+               var a= $("#d").outerWidth();
+                console.log(a);
+            });
+            $("#btnowt").click(function(){
+               var a= $("#d").outerWidth(true);
+                console.log(a);
+            });
+            $("#btnh").click(function(){
+               var a= $("#d").height();
+                console.log(a);
+            });
+            $("#btnih").click(function(){
+               var a= $("#d").innerHeight();
+                console.log(a);
+            });
+            $("#btnoh").click(function(){
+               var a= $("#d").outerHeight();
+                console.log(a);
+            });
+            $("#btnoht").click(function(){
+               var a= $("#d").outerHeight(true);
+                console.log(a);
+            });
+        });
+    </script>
+</body>
+</html>

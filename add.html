@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <hr>
+    <div  id="dd">
+        <h1>vjbdsjkbvejvbakjsvbskajbvuasv</h1>
+    </div>
+    <hr>
+<br>
+
+<button id="pre">prepemd</button>
+<button id="app">append</button>
+<button id="aft">aft</button>
+<button id="be">befo</button>
+
+
+<script>
+    $(document).ready(function(){
+        $("#pre").click(function(){
+            $("#dd").prepend("<h2>helloo</h2>");
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#app").click(function(){
+            $("#dd").append("<h2>helloo</h2>");
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#aft").click(function(){
+            $("br").after("<h2>helloo</h2>");
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#be").click(function(){
+            $("hr").before("<h2>helloo</h2>");
+        });
+    });
+</script>
+<br>
+
+<br>
+
+<table id="t" border="1">  
+    <th>hi</th>
+    <td>brijesh</td>
+</table>
+<br>
+<button id="emp">empt</button>
+<button id="remo">remove</button>
+<script>
+    $(document).ready(function(){
+        $("#emp").click(function(){
+            $("#t").empty();
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#remo").click(function(){
+            $("#t").remove();
+        });
+    });
+</script>
+
+
+</body>
+</html>

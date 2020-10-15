@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            color: red;
+        };
+    </style>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1 id="cs">jdskbvdsjkvbesbvjs</h1>
+    <button id="addcss">add css</button>
+    
+    <button id="removecss">remove css</button>
+    <button id="togglecss">toggle css</button>
+    <script>
+        $(document).ready(function(){
+            $("#addcss").click(function(){
+                $("#cs").addClass("first");
+            });
+        });
+    </script>
+     <script>
+        $(document).ready(function(){
+            $("#removecss").click(function(){
+                $("#cs").removeClass("first");
+            });
+        });
+    </script>
+     <script>
+        $(document).ready(function(){
+            $("#togglecss").click(function(){
+                $("#cs").toggleClass("first");
+            });
+        });
+    </script>
+
+</body>
+</html>

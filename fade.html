@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   
+
+
+    <h1 id="ff"> hello i am fade</h1>
+    <button id="fadein">fadein</button>
+    <button id="fadeout">fadeout</button>
+    <button id="tt">fadeout</button>
+    <button id="to">fateto</button>
+
+  
+
+
+
+
+
+<script>
+    $(document).ready(function(){
+        $("#fadein").click(function(){
+
+            $("#ff").fadeIn("slow", function(){alert("hi")});
+                
+        });
+        
+
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#fadeout").click(function(){
+
+            $("#ff").fadeOut(5000);
+        });
+        
+
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#tt").click(function(){
+
+            $("#ff").fadeToggle();
+        });
+        
+
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        $("#to").click(function(){
+
+            $("#ff").fadeTo(5000,0.2);
+        });
+        
+
+    });
+</script>
+
+
+</body>
+</html>

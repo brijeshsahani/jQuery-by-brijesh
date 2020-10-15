@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        #d{
+            border: 10px solid;
+         
+        }
+        #v{
+            border: 10px solid;
+         
+        }
+        #b{
+            border: 10px solid;
+           
+        }
+        #n{
+            border: 10px solid;
+          
+        }
+        .zz{
+            border: 4px solid;
+          
+        }
+    </style>
+</head>
+<body>
+    <div id="d" class="1">
+       <p>fiest</p> 
+        <div id="v">
+            <p>second</p> 
+        </div>
+   
+        <div id="b"> 
+            <p>third</p> 
+        </div>
+   
+        <div id="n">
+            <center>
+           <p>forth</p>
+           <span id="bb" class="zz">a</span>
+           <span class="zz">b</span>
+           <span id="bbb" class="zz"> c</span>
+           <span id="bbb" class="zz"> d</span>
+        </center>
+        <br>
+        </div>
+       
+    </div>
+
+    <script>
+        $(document).ready(function(){
+         //   $("#bb").parent().css("background","red");//apply only on single parent
+        });
+        $(document).ready(function(){
+         //   $("#bb").parents().css("background","red");//apply on all parents
+        });
+        $(document).ready(function(){
+         // $("#bb").parentsUntil("#b").css("background","red");//apply on all parents not work
+        });
+        $(document).ready(function(){
+          // $("#n").children().css("background","red");// find own chiled
+        });
+        $(document).ready(function(){
+          // $("#d").find("#bb").css("background","red");// find own chiled from any way
+        });
+    </script>
+    
+    
+</body>
+</html>

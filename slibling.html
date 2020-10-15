@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        #fi{
+            border: 7px solid;
+            background-color: slategray;
+        }
+        #se{
+            border: 5px solid;
+            background-color: slategray;
+        }
+        span{
+            border: 2px solid;
+            background-color: slategray;
+        }
+    </style>
+</head>
+<body>
+    <div id="fi">
+        <h3>hello</h3>
+        <div id="se">
+            <center>
+            <h4>hi</h4>
+            <span id="m">1</span>
+            <span>2</span>
+            <span id="sp">3</span>
+            <span>4</span>
+            <span>5</span>
+            <span id="gg">6</span>
+        </center>
+        </div>
+    </div>
+    <script>
+          $(document).ready(function(){
+         //  $("#sp").siblings().css("background","red");// select all brother and sisters
+        });
+        $(document).ready(function(){
+         //  $("#sp").next().css("background","red");// select next one sibling
+        });
+        $(document).ready(function(){
+          // $("#sp").nextAll().css("background","red");// select next all sibling
+        });
+        $(document).ready(function(){
+        //  $("#sp").nextUntil("#gg").css("background","red");// select ranger next
+        });
+
+        $(document).ready(function(){
+        //   $("#sp").prev().css("background","red");// select preveous one sibling
+        });
+        $(document).ready(function(){
+         //  $("#sp").prevAll().css("background","red");// select preveous all sibling
+        });
+        $(document).ready(function(){
+          $("#sp").prevUntil("#m").css("background","red");// select ranger prevous
+        });
+    </script>
+</body>
+</html>

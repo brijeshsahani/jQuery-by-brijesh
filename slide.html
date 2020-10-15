@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   
+
+  
+
+    <h1 id="hh"> hello i am show/hide</h1>
+    <button id="slideup">slide up</button>
+    <button id="slidedown">slide down</button>
+    <button id="togle">tgl</button>
+
+
+   
+
+
+<script>
+    $(document).ready(function(){
+        $("#slideup").click(function(){
+
+            $("#hh").slideUp("slow",function(){
+                alert("hello")
+                });
+        });
+        
+
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#slidedown").click(function(){
+
+            $("#hh").slideDown(5000);
+        });
+        
+
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#togle").click(function(){
+
+            $("#hh").slideToggle();
+        });
+        
+
+    });
+</script>
+
+
+
+
+</body>
+</html>

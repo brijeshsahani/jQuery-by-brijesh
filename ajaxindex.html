@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h2 id="change"> this is changing soon.... </h2>
+  <div id="change1"></div>
+    <button id="btn">call ajax</button>
+   
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+
+                $("#change").load("serverfile.html",function(){
+                    alert("ajax is work properly");
+                });
+                $("#change1").load("serverfile1.html",function(){
+                    
+                });
+            });
+          
+        });
+    </script> 
+</body>
+</html>

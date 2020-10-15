@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    function QuestionsMarks(str) {
+        var d1=("#num").val();
+    var state = { d1: 0, d2: 0, marks: 0,
+        init: function() { this.d1 = this.d2; this.marks = 0; },
+        check: function() { return this.d1 + this.d2 > 9 && this.marks != 3; }
+    };  
+    var re = /[0-9?]/g;
+    var m;
+
+    while ( (m = re.exec(str)) !== null ) {
+        if ( m[0] == '?' ) {
+            state.marks++;
+        } else {
+            state.d2 = parseInt(m[0]);
+            if ( state.check() ) return false;
+            state.init();  
+        }
+    }
+    alert("hi");
+    return true;
+}
+    </script>
+</head>
+<body>
+   <input type="text" id="num"/>
+   <button id="" onclick="QuestionsMarks()">check</button>
+    
+</body>
+</html>

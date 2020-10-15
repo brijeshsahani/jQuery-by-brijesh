@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        .ccc{
+            border: 5px solid;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="c" class="ccc">
+        <h1>kslvnksjv</h1>
+    </div>
+    <div id="ce" class="ccc">
+        <h2>ksfdxbnlvnksjv</h2>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#cc").click(function(){
+                $("<b>hello</b>").prependTo("#ce");
+            });
+        });
+        $(document).ready(function(){
+            $("#bb").click(function(){
+                $("<b>hello</b>").appendTo("#ce");
+            });
+        });
+    </script>
+    <button id="bb"> appto</button>
+    <button id="cc"> preto</button>
+
+</body>
+</html>

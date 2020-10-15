@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   
+
+    <input type="text"/>
+    <select name="slt" id="slt">
+        <option value="hello">hello</option>
+        <option value="hi">hi</option>
+    </select>
+    <button id="frm">click</button>
+
+
+    <h1 id="hh"> hello i am show/hide</h1>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toogle">toggle</button>
+
+
+   
+
+
+<script>
+    $(document).ready(function(){
+        $("#show").click(function(){
+
+            $("#hh").show("slow",function(){
+                alert("hello")
+                });
+        });
+        
+
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+
+            $("#hh").hide(5000);
+        });
+        
+
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#toogle").click(function(){
+
+            $("#hh").toggle();
+        });
+        
+
+    });
+</script>
+
+
+
+
+</body>
+</html>

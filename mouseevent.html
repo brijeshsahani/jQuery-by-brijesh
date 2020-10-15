@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+
+    <h1 id="1">brijesh</h1>
+    <script>
+        $(document).ready(function(){
+           
+            // $("#1").click(function(){
+            //     $("#1").css("color","red")
+            // });
+
+            // $("#1").dblclick(function(){
+            //     $("#1").hide();
+            // });
+
+            // $("#1").contextmenu(function(){
+            //     $("#1").css("color","green");
+            // });
+
+            // $("#1").mouseenter(function(){
+            //     $("#1").css("color","orange")
+            // });
+
+            // $("#1").mouseleave(function(){
+            //     $("#1").css("color","yellow")
+            // });
+            $("body").keypress(function(){
+                $(this).css("background-color","blue");
+            });
+
+             $("#id").keyup(function(){
+                 $(this).css("background-color","pink")
+            });
+
+            $("body").keydown(function(){
+                $(this).css("background-color","yellow")
+            });
+        });
+    </script>
+</body>
+</html>

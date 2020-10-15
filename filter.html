@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <ul>
+        <li>hi</li>
+        <li>hello</li>
+        <li id="m">bye</li>
+        <li>new</li>
+        <li>ika</li>
+    </ul>
+    <script>
+        $(document).ready(function(){
+        //    $("ul li").first().css("background","red");
+        });
+        $(document).ready(function(){
+         //   $("ul li").last().css("background","red");
+        });
+        $(document).ready(function(){
+          //  $("ul li").eq(3).css("background","red");
+        });
+        $(document).ready(function(){
+          //  $("ul li").slice(1,4).css("background","red");//not select 4th element
+        });
+        $(document).ready(function(){
+          //  $("ul li").filter("#m").css("background","red");//select specific element
+        });
+        $(document).ready(function(){
+            $("ul li").not("#m").css("background","red");//ignore specific element
+        });
+    </script>
+</body>
+</html>
